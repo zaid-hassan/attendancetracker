@@ -26,7 +26,7 @@
 }
 
 .title {
-	position: absolute;
+	position: fixed;
 	margin-left: auto;
 	margin-right: auto;
 	font-weight: 400;
@@ -34,7 +34,6 @@
 	top: 2rem;
 	left: auto;
 	cursor: pointer;
-
 	filter: drop-shadow(0 0 3px var(--text));
 }
 
@@ -43,11 +42,11 @@
 }
 
 .attendance-calc {
+	min-width: 80%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	min-width: 80%;
 	padding: 1rem;
 }
 
@@ -72,31 +71,21 @@
 }
 
 .button {
-	border: none;
-	width: 8rem;
-	padding: 0.5rem 1rem;
-	cursor: pointer;
-	background: var(--accent);
-	font-weight: 700;
-	font-size: 1rem;
+    border: transparent;
+    background: var(--accent);
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 2rem;
 }
 .button:hover {
-	background: var(--accent-hover);
-	color: var(--bg);
+    background-color: var(--accent-hover);
+    color: black;
 }
-.button-result {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-}
-
 .result {
-	height: 100%;
-	width: 60%;
-	padding: 0.4rem;
-	display: grid;
-	place-content: center;
-	text-align: center;
+    margin-top: 1rem;
+    width: 20rem;
+    padding: 1rem .4rem;
+    text-align: center;
 }
 
 @keyframes textGlow {

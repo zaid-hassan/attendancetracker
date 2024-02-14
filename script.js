@@ -14,11 +14,15 @@ const calculateAttendance = () =>
 button.onclick = (e) => {
     const attendancePercentage = calculateAttendance();
 
-    if (attendancePercentage < 75) {
-        result.innerText = `You need to attend more classes. Your attendance is ${attendancePercentage}%.`;
-    } else if (attendancePercentage === 75) {
-        result.innerText = `Pheww!! Your attendance is exactly ${attendancePercentage}%. You are safe.`;
+    if (attendancePercentage >= 0) {
+        if (attendancePercentage < 75) {
+            result.innerText = `You need to attend more classes. Your attendance is ${attendancePercentage}%.`;
+        } else if (attendancePercentage === 75) {
+            result.innerText = `Pheww!! Your attendance is exactly ${attendancePercentage}%. You are safe.`;
+        } else {
+            result.innerText = `Your made it!!! Your attendance is ${attendancePercentage}%.`;
+        }
     } else {
-        result.innerText = `Your made it!!! Your attendance is ${attendancePercentage}%.`;
+        result.innerText = 'Please Enter your Attendance.'
     }
 };
