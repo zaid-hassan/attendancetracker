@@ -12,7 +12,8 @@ const calculateAttendance = () =>
     (attendedClasses.value / totalClasses.value) * 100;
 
 button.onclick = (e) => {
-    const attendancePercentage = calculateAttendance();
+    const attendancePercentage = calculateAttendance().toFixed(2);
+    
 
     if (attendancePercentage >= 0) {
         if (attendancePercentage < 75) {
