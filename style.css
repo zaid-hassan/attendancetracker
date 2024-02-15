@@ -55,10 +55,13 @@
 	flex-direction: column;
 	width: 100%;
 	margin: 1rem;
+    backdrop-filter: brightness(90%) blur(5px);
+	border-radius: 1rem;
+    padding: 2rem;
 }
 .input-wrapper > label,
 .input-wrapper > input {
-	padding: 0.5rem;
+	padding: .4rem .5rem;
 	font-size: 1rem;
 }
 .input-wrapper > input {
@@ -76,6 +79,7 @@
     padding: 1rem 2rem;
     cursor: pointer;
     border-radius: 2rem;
+    font-weight: 700;
 }
 .button:hover {
     background-color: var(--accent-hover);
