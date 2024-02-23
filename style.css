@@ -1,8 +1,9 @@
 :root {
-	--bg: #352f44;
-	--text: #faf0e6;
-	--accent: #5c5470;
-	--accent-hover: #b9b4c7;
+	--bg: rgb(34, 40, 49);
+	--text: rgb(238, 238, 238);
+	--accent: rgb(0, 173, 181);
+	--accent-hover: rgb(3, 200, 211);
+	--accent-text: rgb(57, 62, 70);
 	--fs-xl: clamp(1rem, 3vw + 1rem, 3rem);
 }
 * {
@@ -76,6 +77,7 @@
 .button {
     border: transparent;
     background: var(--accent);
+	color: var(--accent-text);
     padding: 1rem 2rem;
     cursor: pointer;
     border-radius: 2rem;
@@ -83,7 +85,6 @@
 }
 .button:hover {
     background-color: var(--accent-hover);
-    color: black;
 }
 .result {
     margin-top: 1rem;
